@@ -1,0 +1,161 @@
+/* Reset Margins */
+{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: #f4f4f4;
+	color:#000;
+	font-family:Comic Sans, cursive, sans-serif;
+	font-size:12px;
+	line-height:1.6em;
+	width: 100%;
+}
+
+.header {
+	font-family:Comic Sans, cursive, sans-serif;
+	text-align: center;
+	font-size: 100%;
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+.navigation{
+	font-size: 16px
+	font-weight:normal;
+	text-align: center;
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+.navigation a {
+	color:black;
+	text-decoration:none;
+	border-style: solid;
+	padding: 5px;
+	box-sizing:border-box;
+	width: 100%;
+	display: block;
+	
+}
+.navigation a:hover{
+	background-color: #99CCFF;
+	color: black;
+}
+.about{
+	font-size: 16px;
+	width: 100%;
+}
+table {
+	border-collapse: collapse;
+	width: 370px;
+	border: solid black 1px;
+	margin-bottom:5px;
+}
+th, td{
+	text-align: left;
+	padding: 8px;
+}
+td{
+	border-left: solid black 1px;
+	border-right: solid black 1px;
+}
+tr:nth-child(even){
+	background-color: #e6e6e6;
+}
+th{
+	border-left: solid black 1px;
+	border-right: solid black 1px;
+}
+tr:first-child{
+	background-color: #999999;
+	border-bottom: solid black 1px;
+	border-left: solid black 1px;
+	border-right: solid black 1px;
+}
+img{
+	width: 370px;
+	height: auto;
+}
+.register{
+	border: solid black 1px;
+	width: 370px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding:0;
+}
+.register h4 {
+	margin-top: 5px;
+	margin-bottom: 0;
+	padding-left: 5px;
+	font-weight: normal;
+}
+.register ul{
+	margin-top: 0;
+	list-style: none;
+	display:inline-block;
+	text-align: left;
+	margin-left: 0;
+	padding-left: 0;
+	margin-bottom: 5px;
+}
+.register a{
+	text-decoration: none;
+	color: black;
+	text-align: left;
+	padding: 5px;
+}
+
+@media (min-width: 400px) {
+	.big-box{
+		display:flex;
+		flex-basis: 100%;
+	}
+	.container-1 {
+		display:flex;
+		flex-direction: column;
+	}
+	.container-3 {
+		display: flex;
+		flex-direction: column;
+		order:1;
+		padding-right: 5px;
+	}
+	.container-2 {
+		display: flex;
+		flex-direction: row;
+		padding-top: 0;
+		justify-content:space-between;
+
+	}
+	.center-right {
+		display: flex;
+		order: 2;
+		width: 100%;
+	}
+	.navigation {
+		display: flex;
+		flex-direction: row;
+		flex-basis: 100%;
+		padding-bottom: 0;
+	}
+	.nav-down {
+		display: flex;
+	}
+	.header {
+		text-align: left;
+		font-size: 27px;
+	}
+	.about {
+		padding-right: 5px;
+	}
+	.choice a{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.table {
+		padding-right: 5px;
+		padding-left:5px;
+	}
+
+}
